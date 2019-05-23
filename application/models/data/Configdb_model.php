@@ -2,7 +2,7 @@
     defined('BASEPATH') OR exit('No direct script access allowed');
     error_reporting(0);
     mysqli_report(MYSQLI_REPORT_STRICT);
-    session_start();
+//    session_start();
 
     class Configdb_model extends CI_Model{
 
@@ -37,7 +37,7 @@
           $user = "root";
           $pass = "";
           $db = "zte_fonade";
-        
+
           try {
             $connection = new mysqli('localhost', $user, $pass, $db);
             $connection->set_charset("utf8");

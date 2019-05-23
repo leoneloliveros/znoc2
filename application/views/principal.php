@@ -1,5 +1,3 @@
-<?php if ($_SESSION['role'] != 'ingeniero') {    header('location:'.base_url('user/principal/'.$_SESSION['role']));} ?>
-<!-- VISTA DEL INGENIERO  -->
 <!-- módulo de las pestañas de la vista del ingeniero en donde podra encontrar los tiquets que se encuentran asignados a el -->
 <ul class="nav nav-tabs">
     <li class="active"><a data-toggle="tab" href="#id_section_engineering">Asignados</a></li>

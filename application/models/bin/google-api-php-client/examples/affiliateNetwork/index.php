@@ -17,7 +17,7 @@
 require_once '../../src/Google_Client.php';
 require_once '../../src/contrib/Google_GanService.php';
 
-session_start();
+//session_start();
 
 $client = new Google_Client();
 $client->setApplicationName("Google GAN PHP Starter Application");

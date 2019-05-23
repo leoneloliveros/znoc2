@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   | The $query_builder variables lets you determine whether or not to load
   | the query builder class.
  */
-$active_group = 'servidor';
+$active_group = 'local';
 $query_builder = TRUE;
 
 $db['local'] = array(
@@ -79,7 +79,7 @@ $db['local'] = array(
     'hostname' => 'localhost',
     'username' => 'root',
     'password' => '',
-    'database' => 'onair',
+    'database' => 'dilo',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
@@ -103,7 +103,7 @@ $db['servidor'] = array(
     'hostname' => 'zte-coldb.cwtksnwikcx3.us-west-2.rds.amazonaws.com',
     'username' => 'adminZTE',
     'password' => 'a4b3c2d1',
-    'database' => 'onair',
+    'database' => 'dilo',
     'dbdriver' => 'mysqli',
     'dbprefix' => '',
     'pconnect' => FALSE,
