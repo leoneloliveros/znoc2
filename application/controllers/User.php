@@ -51,6 +51,68 @@ class User extends CI_Controller {
 //        if (!$this->session->userdata('id')) {
 //            header('location: ' . base_url());
 //        }
+        // TABA1************************************
+        $this->load->library('Datatables');
+        $priorizar_noc = $this->datatables->init();
+
+        $priorizar_noc->query("
+            SELECT INCIDENTE,
+                ESTADO_INCIDENTE,
+                GRUPO_PROPIETARIO,
+                RESPONSABLE,
+                FECHA_CREACION,
+                MES_TKT,
+                DIA_TKT,
+                TIEMPO_VIDA_TKT,
+                TIEMPO_ESCALAMIENTO,
+                TIEMPO_OPERA,
+                FECHA_REPORTE
+            FROM prioriza_noc",
+            "INCIDENTE*
+            ESTADO_INCIDENTE*
+            GRUPO_PROPIETARIO*
+            RESPONSABLE*
+            FECHA_CREACION*
+            MES_TKT*
+            DIA_TKT*
+            TIEMPO_VIDA_TKT*
+            TIEMPO_ESCALAMIENTO*
+            TIEMPO_OPERA*
+            FECHA_REPORT");
+
+
+        $priorizar_noc
+                ->set_options('dom', "'frtiS'")
+                ->set_options('scrollY', '500')
+                ->set_options('scrollX', '0')
+                ->set_options('columnDefs', ' [
+                            { "orderable": false, "targets": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15,16, 17] }
+                          ]')
+                ->set_options('bFilter', 'true')
+                ->set_options('scroller', '{
+                          loadingIndicator: true
+                        }')
+                ->set_options('select', 'true');
+        $priorizar_noc
+                ->style(array(
+                    'class' => 'table table-striped table-bordered dataTable_camilo',
+                ))
+                ->column('Incidente', 'INCIDENTE')
+                ->column('Estado Incidente', 'ESTADO_INCIDENTE')
+                ->column('Grupo Propietario', 'GRUPO_PROPIETARIO')
+                ->column('Responasble', 'RESPONSABLE')
+                ->column('Subestado', 'FECHA_CREACION')
+                ->column('Tec', 'MES_TKT')
+                ->column('Banda', 'DIA_TKT')
+                ->column('Ente Ejecutor', 'TIEMPO_VIDA_TKT')
+                ->column('WBTS', 'TIEMPO_ESCALAMIENTO')
+                ->column('Fecha Creación Onair', 'TIEMPO_OPERA')
+                ->column('Fecha Ultima Revisión', 'FECHA_REPORTE')
+                ->column('Fecha Ultima Revisión', 'FECHA_REPORTE');
+
+        // *****************************************
+
+        $this->datatables->create('priorizar_noc', $priorizar_noc);
 
         $data['title'] = 'Principal';
         $this->load->view('parts/header', $data);

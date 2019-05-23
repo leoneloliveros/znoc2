@@ -33,7 +33,7 @@
 </script>
 
 <!--************************************************* NO TOUCH     DON'T TOCAR ************************************************* -->
-
+<script src="<?= base_url("assets/plugins/jquery/jquery.min.js") ?>"></script>
 <script src="<?= base_url("assets/plugins/bootstrap/js/bootstrap.min.js") ?>"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
@@ -49,16 +49,7 @@
 <script src="<?= base_url("assets/plugins/sweetalert2/sweetalert2.all.js") ?>"></script>
 <!-- ********************************************** HELPER FUNCVIONES GLOBALES *********************************************-->
 <script src="<?= base_url("assets/js/modules/helper.js?v=" . validarEnProduccion()) ?>"></script>
-<script src="<?= base_url("assets/js/modules/configuracion_user.js?v=" . validarEnProduccion()) ?>"></script>
 <script src="<?= base_url("assets/plugins/jquery.mask.js") ?>" type="text/javascript"></script>
-
-<script type="text/javascript">
-    $.post(base_url + 'Temp/getLastDateTemp', {}, function(data) {
-        const hour = JSON.parse(data);
-        $('#hora_actualizacion').append('<h6 class="h6-il">última actualización </h6>' + hour);
-    });
-</script>
-
 
 
 <!--**********************************************FIN NO TOUCH   END DON'T TOCAR********************************************** -->

@@ -20,7 +20,7 @@ class DatatablesBuilder
     private $total = 0;
     private $searchable 	= array();
     private $style 			= '';
-	   private $connection 	= 'servidor';
+	   private $connection 	= 'local';
 
 	private $dt_options		= array(
 		'searchDelay' 	=> '500',
