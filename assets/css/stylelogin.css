@@ -1,0 +1,986 @@
+/*CSS Reset*/
+button,
+form,
+fieldset,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: rgba(90, 129, 204, 0.6);
+  vertical-align: baseline;
+  font-size: 100%;
+}
+body {
+  line-height: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+address, caption, cite, code, dfn, em, strong, var {
+  font-weight: normal;
+  font-style: normal;
+}
+caption, th {
+  text-align: left;
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  position: relative;
+  width: 100%;
+  height: 100%; /*height: 100vh; en caso de quitarle el height al body*/
+background-image: url('../images/font.jpg');
+
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center center;
+background-size: cover;
+}
+body {
+  min-height: 100%;
+  height: 100%;
+  font-weight: lighter;
+  font-family: "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: block;
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -5px;
+}
+p a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+p a:hover {
+  color: #207BE5;
+  border-bottom: 1px solid #fff;
+}
+#warp {
+  position: fixed;
+  margin: 50px auto 0;
+  width: 400px;
+  text-align: center;
+  color: white;
+}
+form {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 90px;
+}
+.admin {
+  height: 350px;
+  float: left;
+  width: 300px;
+  border-right: 1px solid white;
+  text-align: left;
+  left: -90px;
+  top: 40px;
+  transition: all 200ms ease-in 100ms;
+/*     background-color: red;
+ */
+}
+.cms {
+  height: 350px;
+  top: -200px;
+  left: 90px;
+  float: right;
+  width: 300px;
+  text-align: right;
+  transition: all 200ms ease-in 100ms;
+/*   background-color: purple;
+ */}
+.admin, .cms {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transform: rotate(25deg);
+}
+.cms h1 {
+  margin-right: 50px;
+  margin-left: 0px;
+  color: white;
+}
+.rota h1 {
+  margin-left: 20px;
+}
+.roti, .rota {
+  position: relative;
+  display: block;
+  transform: rotate(-25deg);
+}
+.admin:hover h1, .cms:hover h1 {
+  color:   #abb2b9 ;
+  transition: all 0.5s ease-in;
+}
+.rota {
+  margin-top: 80px;
+  margin-left: 35px;
+}
+.roti {
+  margin-top: 80px;
+  margin-right: 55px;
+}
+input, button {
+  border-radius: 15px;
+  margin: 4px;
+  padding: 8px 6px;
+  width: 350px;
+  height: 25px;
+  background: white;
+  color: black;
+  font-size: 15px;
+  transition: all 0.5s ease-out;
+}
+button {
+  height: 40px;
+  margin-right: 50px;
+  margin-left: -230px;
+  background:  #207BE5 ;
+  color: white;
+  text-align: right;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+button:hover {
+  background:  green;
+  transition: all 0.5s ease-in;
+}
+input:hover {
+  box-shadow: inset 0 0 5px #207BE5;
+}
+input:focus {
+  background: #207BE5;
+  color: #fff;
+}
+.uper {
+  top: 100px;
+  left: -60px;
+}
+.downer {
+  top: -100px;
+  left: 60px;
+}
+@media screen and (width: 240px) and (height: 320px) {
+  .admin{
+    height: 273px;
+    left: -74px;
+    top: 65px;
+  }
+  .rota{
+    margin-left: 205px;
+  }
+  .rota h1{
+    margin-left: -13px;
+    font-size: 40px;
+  }
+  input, button{
+    height: 9px;
+    font-size: 11px;
+    margin-left: -19px;
+  }
+  .cms{
+    top: -73px;
+    left: 77px;
+  }
+  .cms h1{
+    font-size: 40px;
+    margin-right: 72px;
+  }
+  button{
+    height: 27px;
+    margin-left: -254px;
+  }
+  p{
+    width: 215px;
+    margin-left: -136px;
+    margin-top: -31px;
+  }
+  p a{
+    font-size: 9px;
+  }
+  .roti{
+    margin-top: 72px;
+    margin-right: 137px;
+  }
+  
+}
+
+@media screen and (min-width: 320px){
+  .admin{
+    height: 299px;
+    float: left;
+    width: 285px;
+    border-right: 1px solid white;
+    text-align: left;
+    left: -79px;
+    top: 40px;
+    transition: all 200ms ease-in 100ms;
+  }
+  .rota{
+    margin-top: 80px;
+    margin-left: 35px;
+  }
+  .rota h1{
+    font-size: 50px;
+    margin-left: 127px;
+  }
+  input, button{
+    border-radius: 15px;
+    margin: 3px;
+    padding: 6px 3px;
+    width: 156px;
+    height: 21px;
+    background: white;
+    color: black;
+    font-size: 14px;
+    transition: all 0.5s ease-out;
+    margin-left: 115px;
+  }
+  .roti{
+    margin-top: 80px;
+    margin-right: 55px;
+  }
+  .roti h1{
+    font-size: 60px;
+    margin-top: 80px;
+    margin-right: 55px;
+  }
+  .cms{
+    height: 350px;
+    top: -200px;
+    left: 99px;
+    float: right;
+    width: 300px;
+    text-align: right;
+    transition: all 200ms ease-in 100ms;
+  }
+  .cms h1{
+    margin-right: 135px;
+    color: white;
+    font-size: 50px;
+    margin-top: 95px;
+  }
+  button{
+    height: 30px;
+    /* margin-right: -6px; */
+    background: #207BE5;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    float: left;
+    margin-left: -43px;
+    margin-top: 19px;
+    padding-right: 15px;
+  }
+  p a{
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+    margin-right: 4px;
+  }
+}
+
+
+@media screen and (min-width: 360px){
+  .admin{
+    height: 350px;
+    float: left;
+    width: 300px;
+    border-right: 1px solid white;
+    text-align: left;
+    left: -90px;
+    top: 40px;
+    transition: all 200ms ease-in 100ms;
+  }
+  /*.rota{
+    margin-top: 80px;
+    margin-left: 35px;
+  }*/
+  .rota h1{
+    font-size: 65px;
+    margin-left: 100px;
+  }
+  input, button{
+    border-radius: 15px;
+    margin: 4px;
+    padding: 8px 6px;
+    width: 350px;
+    height: 25px;
+    background: white;
+    color: black;
+    font-size: 15px;
+    transition: all 0.5s ease-out;
+    margin-left: 86px;
+  }
+  .roti{
+    margin-top: 80px;
+    margin-right: 55px;
+  }
+  .roti h1{
+    font-size: 60px;
+    margin-top: 80px;
+    margin-right: 55px;
+  }
+  .cms{
+    height: 350px;
+    top: -200px;
+    left: 90px;
+    float: right;
+    width: 300px;
+    text-align: right;
+    transition: all 200ms ease-in 100ms;
+  }
+  .cms h1{
+    margin-right: 100px;
+    color: white;
+    font-size: 65px;
+   /* margin-top: 95px;*/
+  }
+  button{
+    height: 40px;
+    /* margin-right: -6px; */
+    background: #207BE5;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    float: left;
+    margin-left: -190px;
+    margin-top: 1px;
+    padding-right: 15px;
+  }
+  p{
+    margin-left: -99px;
+  }
+  p a{
+    color: white;
+    font-size: 11px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (width: 480px) and (height: 320px) {
+  .admin{
+    height: 298px;
+    top: 53px;
+  }
+  .cms{
+    top: -136px;
+    left: 80px;
+  }  
+}
+
+@media screen and (width: 533px) and (height:320px) {
+  .admin{
+    height: 261px;
+    left: -72px;
+  }
+  .rota h1{
+    font-size: 65px;
+  }
+  .cms{
+    top: -112px;
+    left: 89px;
+  }
+  .cms h1{
+    font-size: 65px;
+  }
+}
+
+@media screen and (width:600px){
+  .admin{
+    width: 300px;
+    height: 405px;
+    left: -66px;
+  }
+  .admin h1{
+    font-size: 98px;
+    margin-left: -3px;
+  }
+  input, button {
+    margin-left: -16px;
+  }
+  .cms{
+    left: 110px;
+    top: -211px;
+  }
+  .cms h1{
+    font-size: 98px;
+    margin-right: 29px;
+    margin-top: -28px;
+  }
+  input, button{
+    font-size: 24px;
+    height: 40px;
+  }
+  button{
+    height: 59px;
+    margin-left: -133px;
+    margin-top: 24px;
+  }
+  p{
+    width: 247px;
+    margin-left: -99px;
+  }
+  p a{
+    font-size: 17px;
+  }
+}
+
+@media screen and (device-width: 640px) and (device-height: 360px) {
+  .admin{
+    height: 275px;
+    left: -90px;
+  }
+  .rota h1{
+  font-size: 65px;
+  margin-left: 100px;
+  }
+  input, button{
+    height: 25px;
+    font-size: 15px;
+    margin-left: 86px;
+  }
+  .cms{
+    top: -129px;
+    left: 76px;
+  }
+  .cms h1{
+    margin-right: 100px;
+    color: white;
+    font-size: 65px;
+  }
+  button{
+    height: 40px;
+    margin-left: -190px;
+    margin-top: 1px;
+    padding-right: 15px;
+  }
+  p{
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+
+@media screen and (min-width: 640px){
+  .admin{
+    height: 275px;
+  }
+
+  .cms{
+    top: -129px;
+    left: 76px;
+  }
+  
+}
+
+@media screen and (min-width: 768px){
+  .admin{
+    width: 472px;
+    height: 440px;
+    left: -223px;
+    top: 20px;
+  }
+  .rota{
+    margin-top: 122px;
+    margin-left: 35px;
+  }
+  .rota h1{
+    font-size: 103px;
+    margin-left: 163px;
+  }
+  input, button{
+    border-radius: 26px;
+    width: 383px;
+    height: 52px;
+    font-size: 30px;
+    margin-left: 127px;
+  }
+  .cms{
+    width: 339px;
+    height: 358px;
+    top: -153px;
+    left: 127px;
+  }
+  .cms h1{
+    margin-right: 60px;
+    font-size: 103px;
+    margin-top: -69px;
+  }
+  button{
+    height: 64px;
+    margin-left: -143px;
+    margin-top: 3px;
+    padding-right: 15px;
+  }
+  p{
+    margin-left: -99px;
+    width: 241px;
+    margin-top: -5px;
+  }
+  p a{
+    font-size: 17px;
+    margin-right: 2px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .admin {
+    height: 455px;
+    width: 366px;
+    left: -109px;
+  }
+  .rota {
+    margin-top: 80px;
+    margin-left: 35px;
+}
+  .rota h1{
+    font-size: 124px;
+    margin-left: -3px;
+  }
+  input, button{
+    height: 55px;
+    font-size: 33px;
+    margin-left: -22px;
+  }
+  .cms {
+    left: 117px;
+    margin-top: -68px;
+    left: 158px;
+  }
+  .cms h1{
+    font-size: 124px;
+    margin-left: 44px;
+    margin-top: -108px;
+  }
+  button {
+    height: 71px;
+    width: 430px;
+    margin-right: 50px;
+    margin-left: -152px;
+  }
+  .roti{
+    margin-top: 149px;
+  }
+  p{
+    margin-left: -57px;
+  }
+  p a{
+    font-size: 22px;
+  }
+}
+
+@media screen and (width: 846px) {
+  .admin{
+    height: 403px;
+    width: 366px;
+    left: -109px;
+  }
+  .rota{
+    margin-top: 90px;
+    margin-left: 35px;
+  }
+  .rota h1{
+    font-size: 115px;
+    margin-left: -3px;
+  }
+  input, button{
+    height: 40px;
+    font-size: 30px;
+    margin-left: -22px;
+  }
+  .cms{
+    margin-top: -68px;
+    left: 169px;
+  }
+  .roti{
+    margin-top: 149px;
+  }
+  .cms h1{
+    font-size: 115px;
+    margin-left: 37px;
+    margin-top: -88px;
+  }
+  button{
+    height: 50px;
+    width: 430px;
+    margin-left: -170px;
+    padding: 5px 13px;
+    margin-top: 11px;
+  }
+  p{
+    margin-left: -57px;
+  }
+}
+
+
+@media screen and (width: 568px) and (height: 320px){
+  .admin{
+    height: 268px;
+    top: 64px;
+  }
+  .cms{
+    top: -126px;
+    left: 87px;
+  }
+  .roti{
+    margin-top: 109px;
+    /*margin-right: 55px;*/
+  }
+  .cms h1{
+    margin-top: 95px;
+  }
+  button{
+    margin-top: 6px;
+  }
+}
+@media screen and (width: 667px) and (height: 375px){
+  .rota{
+    top: 7px; 
+  }
+  .roti{
+    top: -23px;
+  }
+  .cms{
+    left: 76px;
+  }
+  button{
+    margin-top: 3px;
+  }
+  .cms h1{
+    margin-top: 110px;
+  }
+  input{
+  width: 212px;
+  margin-left: 105px;
+  height: 25px;
+  border-radius: 15px;
+  }
+  button{
+    margin-top: 5px;
+    height: 32px;
+  }
+}
+@media screen and (width: 480px) and (height: 854px){
+  input{
+    height: 31px;
+    font-size: 20px;
+  }
+  .cms{
+    top: -186px;
+    left: 86px;
+  }
+}
+@media screen and (width: 823px) and (height: 411px){
+  .admin{
+    height: 298px;
+  }
+  .rota h1{
+    font-size: 68px;
+    margin-left: 161px;
+  }
+  input{
+    margin-left: 116px;
+    font-size: 21px;
+    height: 36px;
+  }
+  .cms h1{
+    font-size: 68px;
+    margin-right: 111px;
+  }
+  button{
+    height: 43px;
+    margin-left: -251px;
+    font-size: 21px;
+  }
+  .cms{
+    top: -57px;
+    left: 149px;
+  }
+  .rota{
+    margin-top: 98px;
+  }
+  p a {
+    font-size: 16px;
+  }
+  p{
+    margin-left: -100px;
+  }
+  .cms{
+    top: -26px;
+    left: 134px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .admin{
+  height: 350px;
+  width: 300px;
+  left: -90px;
+  top: 40px;
+  }
+  input{
+    height: 25px;
+    font-size: 15px;
+    width: 350px;
+    padding: 8px 6px;
+    border-radius: 15px;
+    margin-left: 3px;
+  }
+  .rota h1{
+    font-size: 90px;
+    margin-left: 20px;
+  }
+  .cms{
+    height: 350px;
+    top: -81px;
+    left: 55px;
+    width: 300px;
+    padding-top: 52px;
+  }
+  .cms h1{
+    font-size: 90px;
+    margin-left: 29px;
+    /*margin-right: 50px;*/
+  }
+  .roti{
+    margin-top: 80px;
+    margin-right: 55px;
+  }
+  button{
+    height: 40px;
+    margin-left: -230px;
+    margin-right: 50px;
+    font-size: 15px;
+    border-radius: 15px;
+    padding-right: 5px;
+  }
+  p a{
+    font-size: 13px;
+  }
+  p{
+    margin-left: -137px;
+  }
+}
+@media screen and (width: 812px) and (height: 375px){
+  .admin{
+    height: 362px;
+    width: 344px;
+  }
+  .rota h1{
+    font-size: 110px;
+    margin-left: 12px;
+  }
+  .rota input{
+    height: 35px;
+    margin-left: -7px;
+    border-radius: 15px;
+    font-size: 23px;
+  }
+  .cms h1{
+    font-size: 110px;
+    margin-left: 34px;
+  }
+  button{
+    height: 51px;
+    border-radius: 15px;
+    margin-left: -187px;
+    font-size: 23px;
+  }
+  .cms{
+    top: -106px;
+    left: 133px;
+  }
+  p a{
+    font-size: 13px;
+  }
+  p{
+    margin-left: -144px;
+  }
+}
+@media screen and (width:1280px) and (height: 800px){
+  .admin{
+    height: 443px;
+    width: 333px;
+  }
+  .rota h1{
+    font-size: 112px;
+    margin-left: -7px;
+  }
+  .rota input{
+    height: 43px;
+    font-size: 24px;
+    width: 385px;
+    margin-left: -25px;
+  }
+  .cms{
+  left: 93px;
+  top: -132px;
+  }
+  .roti h1{
+  font-size: 112px;
+  }
+  button{
+    height: 59px;
+    margin-left: -186px;
+    font-size: 24px;
+    padding: 15px;
+  }
+  p a{
+    font-size: 15px;
+  }
+  p{
+    margin-left: -122px;
+  }
+}
+@media screen and (width: 896px) and (height: 414px){
+  .admin{
+  height: 392px;
+  }
+  .rota h1{
+    font-size: 110px;
+    margin-left: 28px;
+  }
+  .rota input{
+    height: 46px;
+    border-radius: 15px;
+    margin-left: 10px;
+  }
+  .roti h1{
+    font-size: 110px;
+  }
+  .cms{
+    top: -113px;
+    left: 153px;
+  }
+  button{
+    height: 62px;
+    border-radius: 15px;
+    margin-left: -175px;
+  }
+}
+@media screen and (width: 1024px) and (height: 1366px){
+  .admin{
+    height: 559px;
+    width: 399px;
+    left: -168px;
+  }
+  .rota h1{
+    font-size: 130px;
+    margin-left: 2px;
+  }
+  .rota input{
+    height: 66px;
+    border-radius: 29px;
+    margin-left: -38px;
+    width: 520px;
+    font-size: 36px;
+  }
+  .cms h1{
+    font-size: 130px;
+  }
+  button{
+    height: 82px;
+    font-size: 36px;
+    border-radius: 29px;
+    margin-left: -145px;
+    padding: 17px;
+  }
+  .cms{
+    width: 349px;
+    top: -197px;
+    left: 142px;
+  }
+  p a{
+    font-size: 22px;
+  }
+  p{
+    margin-left: -62px;
+  }
+}
+@media screen and (width: 1366px) and (height: 1024px){
+  .admin{
+    height: 559px;
+    width: 399px;
+    left: -168px;
+  }
+  .rota h1{
+    font-size: 130px;
+    margin-left: 2px;
+  }
+  .rota input{
+    height: 66px;
+    border-radius: 29px;
+    margin-left: -38px;
+    width: 520px;
+    font-size: 36px;
+  }
+  .cms h1{
+    font-size: 130px;
+  }
+  button{
+    height: 82px;
+    font-size: 36px;
+    border-radius: 29px;
+    margin-left: -145px;
+    padding: 17px;
+  }
+  .cms{
+    width: 349px;
+    top: -197px;
+    left: 142px;
+  }
+  p a{
+    font-size: 22px;
+  }
+  p{
+    margin-left: -62px;
+  }
+}
+

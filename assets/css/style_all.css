@@ -1,0 +1,160 @@
+.btn_como{
+	margin-bottom: 17px !important;
+    width: 77px;
+    height: 40px;
+    margin-left: 43%;
+}
+.div_pasos{
+	font-size: 12px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.letras_pasos{
+	font-size: 23px !important;
+}
+.title_mdl_update{
+    margin: 0 0 0 -30px;
+}
+#valid_pss{
+    margin-left: 43%;
+}
+#last_pass{
+    margin: 13px 0 18px 0;
+}
+.inputs_mdl_update, #new_email_div{
+    width: 300px !important;
+    margin-left: 136px !important;
+    border: 1px solid black !important;
+}
+.div_mdl_conf_user_style_1, .div_mdl_conf_user_style{
+    border: 1px solid #999;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 17px;
+    padding: 10px;
+    border-radius: 12px;
+    background: #084c6f1a;
+
+}
+/*******************************************    ESTILOOS CHECK BOX  **************************************************************/
+body, html {
+  font-family: 'Lato', monospace;
+  font-size: ~'calc(1rem + 1vw)';
+}
+
+.label__checkbox {
+  display: none;
+}
+
+.label__check {
+  border-radius: 50%;
+  border: 5px solid #999;
+  background: white;
+  vertical-align: middle;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border .3s ease;
+  margin:-49px 0 4px 100px;
+  
+  i.icon {
+    opacity: 0.2;
+    font-size: ~'calc(1rem + 1vw)';
+    color: transparent;
+    transition: opacity .3s .1s ease;
+    -webkit-text-stroke: 3px rgba(0,0,0,.5);
+  }
+  
+  &:hover {
+    border: 5px solid rgba(0,0,0,0.2);
+  }
+}
+
+.label__checkbox:checked + .label__text .label__check {
+  animation: check .5s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards;
+  
+  .icon {
+    opacity: 1;
+    transform: scale(0);
+    color: white;
+    -webkit-text-stroke: 0;
+    animation: icon .3s cubic-bezier(1.000, 0.008, 0.565, 1.650) .1s 1 forwards;
+  }
+}
+
+.center {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+@keyframes icon {
+  from {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes check {
+  0% {
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 5px;
+  }
+  10% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.1;
+    background: rgba(0,0,0,0.2);
+    border-width: 15px;
+  }
+  12% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.4;
+    background: rgba(0,0,0,0.1);
+    border-width: 0;
+  }
+  50% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 1;
+  }
+}
+/*******************************************   FIN ESTILOOS CHECK BOX   **************************************************************/
+#modal_enviar{
+  width: 71px;
+}
+#modal_cancelar{
+  width: 80px;
+}
+
+.activitieIng{
+  
+  border: 1px solid red !important;
+  background: #bb2b2b;
+}
+.documentado,.activitieIng{color: #f9f9f9;}
+.documentado{
+  border: 1px solid lime !important;
+  background: #459412;
+}

@@ -1,0 +1,2858 @@
+body {
+    padding: 0;
+}
+
+
+.telmexVIP_header .menu_nav_header{
+    background: #084c6f;
+    font-size: 110%;
+    font-family:sans-serif;
+
+}
+.telmexVIP_header .home{
+    background: #1e6990 !important;
+
+}
+.telmexVIP_header .logo_header{
+    margin-top: 2px;
+    position: fixed;
+}
+.telmexVIP_header .dropdown-toggle{
+    background-color: #084c6f !important;
+}
+
+.telmexVIP_header .navbar-inverse .navbar-nav>li>a {
+    color: #d2c9c9;
+    border-radius: 5px;
+    font-size: 110%;
+    font-family:sans-serif;
+}
+
+.telmexVIP_header .dropdown-menu>li>a {
+    display: block;
+    padding: 11px 28px;
+    clear: both;
+    font-weight: 500;
+    line-height: 1.42857143;
+    color: #084c6f;
+    white-space: nowrap;
+    border: 1px solid #084c6f30;
+}
+
+.telmexVIP_header .dropdown-menu>li>a:hover {
+
+    color: #fff;
+    background-color: #084c6f;
+
+}
+/*css del boton para ots de mas de 15 dias*/
+.botnOtsfiteenDays{
+    text-align: center;
+}
+/*CSS del modal*/
+.cssetion {
+    background-color: #fff;
+    border: 1px solid #b9b3b3;
+    border-radius: 15px;
+    margin: 18px 0px;
+    padding: 25px;
+}
+/* css head */
+.telmexVIP_header .tamaniomin>li>a {
+    min-width: 222px;
+}
+/*Imagen responsive para el fondo de implementacion de servicios*/
+
+.css_imagen{
+    width: 100%;
+    height: 91%;
+    padding: 0 !important;
+    margin: 0; top: 53px;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+/*Clase para quitar un padding inferior que genera la barra de navegacion*/
+
+.imagenfond{
+    width: 100%;
+    height: 100%;
+}
+
+.selectValidacionIP{
+    font-size: 19px;
+    width: 19%;
+    border-radius: 10%;
+    font-family: sans-serif;
+}
+
+.sessionmodal{
+
+    background-color: #fff;
+    border: 1px solid #b9b3b3;
+    border-radius: 15px;
+    margin:  0px;
+    padding: 25px;
+}
+/*Estilo al modal de detalles en Gestion*/
+.ubicacionLetra{
+    text-align: left !important;
+    font-size: 12px !important;
+    height: 29px !important;
+}
+
+#formModal_detalle .input-group{
+    width: 100% !important;
+    font-size: 12px;
+}
+.csstextarea{
+    resize: vertical ;
+}
+.tamanioletra{
+    text-align: left !important;
+    font-size: 12px !important;
+}
+.sessionmodal .form-group{
+    margin:0;
+}
+.circulo {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.telmexVIP_header .badge {
+    background-color: #1f4c6f;
+    border: 1px solid #ece6e5;
+    color: #eee8e8;
+}
+/*ESTILOS DEL MENU STICKY*/
+
+.contenedor {
+    z-index: 1;
+    background-color: #fff;
+    width: 193px;
+    height: 330px;
+    border-style: solid;
+    border-color: #084c6f;
+    position: fixed;
+    top: 20%;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: -2px 2px 5px #0c3565;
+
+    transition: all 0.5s  cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -webkit-transition: all 0.5s Out ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Back;
+    -moz-transition: all 0.5s Out ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Back;
+    -ms-transition: all 0.5s Out ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â· Back;
+
+}
+.boton {
+    display: block;
+    width: 100%;
+    margin: 1px;
+    background-color:#08364e;
+    border-radius: 5%;
+    color: #fff;
+    text-decoration: none !important;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}
+
+.menu-fixed li{
+    display: block;
+    position: relative;
+    background-color: white;
+    padding-top: 10px;
+
+}
+
+.menu-fixed ul{
+    padding-left: 20px;
+}
+
+
+.rotate-90{
+
+    transform: rotate(-90deg);
+
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+
+    /* IE */
+    -ms-transform: rotate(-90deg);
+
+    /* Opera */
+    -o-transform: rotate(-90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.contenedor.closed{
+    background-color: #084c6f;
+    border-color: transparent;
+    width: 30px;
+    height: 180px;
+    box-shadow: -1px 2px 8px #333;
+    border-radius: 15px 0px 0px 15px;
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+.contenedor.closed:hover {
+    background-color:#084c6fd4;
+
+}
+
+#btn_fixed .text{
+    margin-top: 40px;
+    display: block;
+}
+#btn_fixed{
+    width: 150px;
+    margin-left: -60px;
+    color: #FFF;
+    text-shadow: 0px 1px 1px #0c3565;
+    cursor: pointer;
+}
+#btn_close_fixed{
+
+    display: block;
+    font-size: 11px;
+    padding-top: 8px;
+    padding-left: 9px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #299bd6;
+    width: 100%;
+    cursor: pointer;
+    background-color: #084c6f;
+    color: #d2c9c9;
+    font-size: 11px;
+}
+#btn_close_fixed:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #084c6f;
+    border-bottom: 1px solid #084c6f;
+    border-radius: 15px 15px 0px 0px;
+    display: block;
+
+}
+.espaciomenu{
+    margin-left: 10px;
+}
+/*Estilo para la vista de Type restore*/
+.cssparaeldiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.csstable{
+    width: 67% !important;
+}
+.csscolumna{
+    width: 50%;
+    text-align: center;
+}
+.cssformtext{
+    text-align: center;
+}
+.cssnewtypem{
+    background: #084c6f;
+    color: #fff;
+}
+.csstypesubtitle{
+    background: #084c6f;
+    color: #fff;
+    font-family: inherit;
+}
+.anchotable{
+    width: 75%;
+}
+
+.cssmodificacionin{
+    width: 67% !important;
+    border-radius: 11% !important;
+    margin-right: 3% !important;
+}
+.ubicacionboton{
+    float: right;
+    /* margin-top: 4px !important;*/
+    margin-bottom: -9% !important;
+
+}
+.btn_red{
+    width: 30%;
+
+}
+.div_Form_Modals {
+    margin-left: -53%;
+}
+.div_Text_Form_modal{
+    margin-right: 30%;
+}
+/**************************************************************************/
+/* The container */
+.S_check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.S_check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.S_check:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.S_check input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.S_check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.S_check .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.color_fondo_modal{
+    background: #8080800f;
+    height: 160px !important;
+}
+.color_letra{
+    color: #fff;
+}
+
+.wdth_225p {
+    width: 300px !important;
+    font-size: 12px !important;
+}
+.max_width_select{
+    width: 250px !important;
+    font-size: 12px !important;
+    padding: 0px !important;
+}
+.button_observacion{
+    margin-top: 28%;
+    display: block !important;
+    margin-left: 19px;
+}
+.algo {
+    font-size: 13.5px !important ;
+}
+/*titulo del navbar header*/
+.style_title-nav{
+    margin: 7px;
+    margin-left: 5em;
+    color: #d2c9c9;
+    font-size: 20px !important;
+    margin-top: 14px;
+}
+.style_title-nav_hora{
+    margin: 7px;
+    margin-left: 5em;
+    color: #d2c9c9;
+    font-size: 15px !important;
+    margin-top: 19px;
+}
+.tamanioTableAll{
+    font-size: 10px !important;
+}
+
+th:nth-child(5) {
+    width: 46px;
+}
+
+
+/*boton para actualizar datos de la cuenta (modal configuracion)*/
+
+.font_modal_conf{
+    background: #084c6f;
+    color: white;
+    text-align: -webkit-center;
+    font-weight: bold !important;
+}
+
+/*estilo para cerrar el modal configuracion*/
+.btn_close_modal{
+    color: white;
+    font-size: xx-large;
+}
+
+estilo al div mdl configuración
+.div_mdl_conf{
+    background: #f3eded;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    border-radius: 16px;
+}
+
+#menu_conf div{
+    display: none;
+}
+
+
+/* estilos para titulo letras bonito */
+.brody {
+    background: #24313a73;
+    color: #fff;
+    padding: 26px 32px;
+    border-radius: 5px;
+}
+
+.brody h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.brody #contrainer {
+    background: #576067;
+    padding: 9px;
+    /* border: 1px dashed #98abb9; */
+    outline-offset: -8px;
+    outline: 1px dashed #98abb9;
+    -webkit-box-shadow: 2px 2px 2px #000;
+    -moz-box-shadow: 2px 2px 2px #000;
+    box-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+#reportesExport{
+    position: fixed;
+    display: none;
+    z-index: 155;
+    top: 14.5em;
+    left: 14.3em;
+    background: #084c6f;
+    border: 1px solid #084c6f;
+    border-left: unset;
+}
+@media screen and (width: 320px) and (height: 568px){
+    .telmexVIP_header .logo_header {
+        margin-left: 10px;
+        position: absolute;
+    }
+    .nav>li{
+        width: 1px;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        text-transform: lowercase;
+        width: 62px;
+        margin-left: 253px;
+        margin-top: -105px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 41px;
+        left: 0px;
+        font-size: 32px;
+        visibility: visible;
+    }
+    .style_title-nav{
+        margin-left: 4.2em;
+        margin-top: 19px;
+    }
+    b{
+        font-size:18px;
+        text-align: inherit;
+        display: none;
+    }
+    .onoffswitch{
+        margin-left: 89px;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 49px;
+        width: 341px;
+        margin-left: -38px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 90px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 103px;
+    }
+    .style_title-nav_hora{
+        margin-top: 52px;
+        margin-left: 14px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+
+@media screen and (width: 568px) and (height: 320px){
+    /*.telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 89px;
+        width: 0px;
+    }*/
+    .telmexVIP_header .logo_header{
+        margin-left: 15px;
+        position: absolute;
+    }
+    .glyphicon.glyphicon-log-in{
+        left: -7px;
+        top: 12px;
+        font-size: 34px;
+        visibility: visible;
+    }
+
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 52px;
+        left: 507px;
+        top: -111px;
+        text-transform: lowercase;
+        visibility: hidden;
+    }
+    .style_title-nav{
+        margin-top: 2px;
+        margin-left: 211px
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    a[href="#"]{
+        width: 0px;
+        height: 0px;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .style_title-nav_hora{
+        margin-left: 148px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 218px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 240px;
+    }
+    b{
+        margin-left: 148px;
+    }
+}
+
+
+@media screen and (width: 412px) and (height: 732px) {
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .m-t-10{
+        width: 68px;
+        margin-left: 8px;
+    }
+    .telmexVIP_header .logo_header{
+        margin-top: 7px;
+        position: absolute;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .style_title-nav{
+        margin-top: 4px;
+        margin: -12px;
+        margin-left: 130px;
+        padding-top: 15px;
+        width: fit-content;
+    }
+    span.glyphicon.glyphicon-log-in{
+        font-size: 34px;
+        margin-left: -25px;
+        margin-top: 0px;
+        left: 20px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        font-size: 0%;
+        display: inline-flex;
+        margin-left: 354px;
+        top: -131px;
+        width: 8%;
+    }
+    .onoffswitch{
+        margin-left: 127px;
+    }
+    .style_title-nav_hora{
+        margin-left: 55px;
+        margin-top: 59px;
+    }
+    .h6-il{
+        font-size: 19px;
+    }
+    .nav>li{
+        height: 12px;
+    }
+    h1{
+        text-align: center;
+    }
+    .container{
+        overflow: auto;
+    }
+    b{
+        margin-left: 66px;
+    }
+    #calendarGraphic1{
+        font-size: 17px;
+        padding-left: 140px;
+    }
+    #monthSelected{
+        font-size: 17px;
+        padding-left: 159px;
+    }
+}
+
+@media screen and (width: 800px) and (height: 1280px){
+    .m-t-10{
+        margin-top: 27px;
+        height: 71px;
+    }
+    .container-fluid{
+        height: 141px;
+    }
+    .telmexVIP_header .logo_header{
+        margin-top: 20px;
+        position: absolute;
+    }
+    b:nth-child(1){
+        margin-left: 229px;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .style_title-nav{
+        width: 74px;
+        margin-left: -248px;
+        white-space: pre;
+        margin-top: 84px;
+    }
+    .glyphicon.glyphicon-log-in{
+        visibility: visible;
+        font-size: 74px;
+        top: 51px;
+        left: 0px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 93px;
+        left: -19px;
+        top: -43px;
+        visibility: hidden;
+    }
+    .onoffswitch{
+        left: 291px;
+    }
+    .footerF{
+        padding: 19px;
+        margin-top: 54px;
+    }
+    .margenDelFooter{
+        font-size: 28px;
+
+    }
+    .style_title-nav_hora{
+        margin-left: 229px;
+        margin-top: 38px;
+    }
+    .h6-il{
+        font-size: 20px;
+    }
+    h1{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 339px;
+        margin-left: 15px;
+    }
+    #myChart2{
+        margin-top: 53px;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 295px;
+        margin-left: 15px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+}
+
+
+@media screen and (width: 600px) and (height: 1024px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-left: 15px;
+        margin-top: 19px;
+    }
+    .m-t-10{
+        width: 162%;
+    }
+    b{
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .glyphicon.glyphicon-log-in{
+        visibility: visible;
+        left: 542px;
+        top: -84px;
+        font-size: 52px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        margin-left: -32px;
+        font-size: 0%;
+        height: 0px;
+        width: 0px;
+        top: -7px;
+        background: red;
+        visibility: visible;
+    }
+    .style_title-nav{
+        font-size: 31px;
+        margin: 10px;
+        margin-left: 11em;
+        margin-top: 0.5em;
+    }
+    .footerF{
+        margin-top: 90px;
+    }
+    .footerF .margenDelFooter{
+        height: 73px;
+        font-size: x-large;
+    }
+    .onoffswitch{
+        left: 230px;
+    }
+    .h6-il{
+        font-size: 15px;
+    }
+    .style_title-nav_hora{
+        margin-left: 172px;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        text-align: center;
+        padding-left: 36px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 247px;
+    }
+}
+
+@media screen and (width: 640px) and (height: 360px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 15px;
+        margin-top: 12px;
+    }
+    .nav>li{
+        font-size: 90%;
+        left: 0px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: -4px;
+        margin-top: -71px;
+        margin-left: 582px;
+        width: 55px;
+        height: 2px;
+        visibility: hidden;
+    }
+    .style_title-nav{
+        margin-left: 235px;
+        margin-top: 19px;
+    }
+    .m-t-10{
+        width: 106%;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    b{
+        margin-left: 170px;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .style_title-nav_hora{
+        margin-left: 179px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 32px;
+        left: -5px;
+        top: 38px;
+        visibility: visible;
+    }
+    h1{
+        text-align: center;
+    }
+    .footerF{
+        margin-top: 14px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    #calendarGraphic1{
+        padding-left: 257px;
+    }
+    #monthSelected{
+        padding-left: 269px;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+}
+
+@media screen and (width: 375px) and (height: 667px) {
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        top: 14px;
+        left: 15px;
+    }
+    .glyphicon.glyphicon-log-in{
+        visibility: visible;
+        left: -3px;
+        top: 40px;
+        font-size: 34px;
+    }
+    .m-t-10{
+        width: 118%;
+        margin-top: 3px;
+    }
+    .style_title-nav{
+        margin: -150px;
+        margin-top: 42px;
+        width: fit-content;
+        margin-left: 115px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 49px;
+        width: 0px;
+        top: -159px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        left: 261px;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 80px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    .style_title-nav_hora{
+        margin-left: 51px;
+        margin-top: 67px;
+    }
+    h1{
+        white-space: pre-line;
+        text-align: center;
+    }
+    a:nth-child(1){
+        visibility: hidden;
+
+    }
+    .footerF{
+        top: 4px;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 124px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 134px;
+    }
+    b{
+        margin-left: 50px;
+    }
+    .container{
+        margin-top: 14px;
+        overflow: auto;
+    }
+}
+
+@media screen and (width: 667px) and (height: 375px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        top: 11px;
+        margin-left: 14px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 598px;
+        width: 65px;
+        top: -132px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 33px;
+        top: 40px;
+        visibility: visible;
+    }
+    .m-t-10{
+        width: 118%;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 128px;
+    }
+    .h6-il{
+        font-size: 15px;
+    }
+    .style_title-nav{
+        margin-left: 261px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 265px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 286px;
+    }
+    .style_title-nav_hora{
+        margin-left: 192px;
+    }
+}
+
+@media screen and (width: 360px) and (height: 640px) {
+    .Hora_de_actualizacion{
+        margin-top: 54px;
+        margin-left: -1em;
+    }
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 15px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        visibility: hidden;
+        width: 54px;
+        margin-left: 295px;
+        margin-top: -103px;
+    }
+    .glyphicon.glyphicon-log-in{
+        visibility: visible;
+        font-size: 34px;
+        top: 43px;
+        left: -5px;
+    }
+    .style_title-nav{
+        margin-top: 9px;
+        margin-left: 108px;
+    }
+    /*.telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        top: -92px;
+        left: 32px;
+        width: 325px;
+    }*/
+    h1{
+        font-size: 33px;
+        text-align: center;
+    }
+    .form-group{
+        margin-left: 87px;
+    }
+    .form-control{
+        margin-left: -39px;
+    }
+    legend{
+        text-align: center;
+    }
+    #contentGraphics{
+        padding: 23px;
+        margin-left: -3px;
+    }
+    div#contentGraphics{
+        margin-left: -42px;
+    }
+    #contentGraphics2{
+        padding: 0px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    /*  b{
+       display: none;
+    }  */
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        /*  padding-left: 39px;
+         margin-left: -7px; */
+        width: 72%;
+        padding-left: 23px;
+        margin-left: -7px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 91px;
+    }
+    .style_title-nav_hora{
+        margin-top: 55px;
+        margin-left: 32px;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    .container{
+        margin-top: 18px;
+        overflow: auto;
+    }
+    #btn_search{
+        margin-left: 128px;
+        margin-top: -57px;
+    }
+}
+
+@media screen and (width: 384px) and (height: 640px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-left: 9px;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 34px;
+        left: -11px;
+        font-size: 32px;
+        visibility: visible;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 327px;
+        width: 54px;
+        margin-top: -99px;
+        visibility: hidden;
+    }
+    b{
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+    }
+    .style_title-nav_hora{
+        margin-top: 53px;
+        margin-left: 57px;
+    }
+    .h6-il{
+        font-size: inherit;
+    }
+    .style_title-nav{
+        margin-left: 119px;
+    }
+    .m-t-10{
+        margin-left: 6px;
+    }
+    h1{
+        text-align: center;
+        margin-top: -1px;
+    }
+    #monthSelected{
+        margin-top: 56px;
+        font-size: 18px;
+        padding-left: 124px;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 124px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+
+@media screen and (width: 414px) and (height: 846px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 7px;
+    }
+    .m-t-10{
+        width: 84px;
+    }
+    .style_title-nav_hora{
+        margin-top: 63px;
+        margin-left: 47px;
+    }
+    .h6-il{
+        font-size: 20px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        background: red;
+        left: 344px;
+        top: -205px;
+        visibility: hidden;
+        width: min-content;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 39px;
+        top: 15px;
+        visibility: visible;
+    }
+    .nav>li{
+        height: 33px;
+    }
+    h1{
+        text-align: center;
+    }
+    legend{
+        text-align: center;
+    }
+    .style_title-nav{
+        margin-left: 119px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+@media screen and (width: 1280px) and (height: 800px) {
+    .style_title-nav_hora{
+        margin-left: 489px;
+        margin-top: 20px;
+    }
+    .style_title-nav{
+        margin-left: -233px;
+        margin-top: 46px;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: min-content;
+        margin-top: -49px;
+        left: 29px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        visibility: visible;
+        top: 43px;
+        font-size: 54px;
+        left: -5px;
+    }
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    #calendarGraphic1{
+        font-size: 22px;
+        margin-left: 398px;
+        padding-left: 110px;
+    }
+    h1{
+        text-align: center;
+    }
+    #monthSelected{
+        margin-top: 22px;
+        font-size: large;
+    }
+    div.footerF{
+        font-size: 150%;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    #monthSelected{
+        font-size: 20px;
+        padding-left: 516px;
+        margin-left: 396px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    .m-t-10{
+        margin-top: 14px;
+        width: 97px;
+    }
+    b{
+        margin-left: 493px;
+    }
+}
+
+@media screen and (width: 640px) and (height: 384px) {
+    .telmexVIP_header .logo_header{
+        left: 7px;
+        position: absolute;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 41px;
+        left: 577px;
+        top: -175px;
+        visibility: hidden;
+    }
+    span.glyphicon.glyphicon-log-in{
+        top: 38px;
+        font-size: 47px;
+        left: -15px;
+        visibility: visible;
+    }
+    .style_title-nav_hora{
+        margin-left: 11em;
+        padding: 13px;
+    }
+    .nav>li{
+        height: 39px;
+    }
+    .style_title-nav{
+        margin-left: 244px;
+    }
+    a[href="#"]{
+        width: fit-content;
+        left: 60px;
+        top: 12px;
+    }
+    h1{
+        text-align: center;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    legend{
+        text-align: center;
+    }
+    .m-t-10{
+        width: 100px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    #calendarGraphic1{
+        padding-left: 255px;
+        font-size: 16px;
+    }
+    #monthSelected{
+        font-size: 16px;
+        padding-left: 285px;
+    }
+}
+@media screen and (width: 600px) and (height: 960px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 12px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 64px;
+        left: 534px;
+        top: -163px;
+        visibility: hidden;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 44px;
+        left: -17px;
+        top: 51px;
+        visibility: visible;
+    }
+    .m-t-10{
+        width: 80px;
+        margin-top: 15px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 78px;
+    }
+    .h6-il{
+        font-size: 19px;
+    }
+    .style_title-nav{
+        margin-left: 220px;
+    }
+    h1{
+        text-align: center;
+    }
+    b:nth-child(1){
+        margin-left: 158px;
+    }
+    #calendarGraphic1{
+        padding-left: 78px;
+        width: fit-content;
+        margin-left: 135px;
+        font-size: 23px;
+    }
+    #monthSelected{
+        width: 168px;
+        margin-left: 203px;
+        font-size: 20px;
+        margin-top: 32px;
+        padding-left: 48px;
+    }
+    .style_title-nav_hora{
+        margin-left: 138px;
+    }
+}
+@media screen and (width: 960px) and (height: 600px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 0px;
+        left: -65px;
+        top: -48px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 43px;
+        left: -16px;
+        visibility: visible;
+        top: 44px;
+    }
+    .m-t-10{
+        width: 82px;
+    }
+    .nav.navbar-nav.menu_nav_header2{
+        padding-right: 404px;
+        margin-top: 45px;
+        margin-left: -42px;
+        width: 0px;
+        padding-left: 345px;
+        height: 0px;
+        white-space: nowrap;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 310px;
+        margin-top: 105px;
+    }
+    .logo_header{
+        top: 0px;
+    }
+    .container-fluid .menu_nav_header{
+        margin-top: -90px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    .style_title-nav_hora{
+        margin-top: 108px;
+        margin-left: 324px;
+    }
+    legend{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 19px;
+        margin-left: 16px;
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 19px;
+        padding-left: 325px;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .style_title-nav{
+        margin-top: 144px;
+        margin-left: -229px;
+    }
+    b:nth-child(1){
+        margin-left: -32px;
+    }
+}
+@media screen and (width: 320px) and (height: 533px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 8px;
+    }
+    .m-t-10{
+        margin-left: 7px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 53px;
+        white-space: nowrap;
+        margin-left: -71px;
+    }
+    .style_title-nav{
+        margin-left: 85px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 0px;
+        top: -199px;
+        left: 256px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 34px;
+        font-size: 29px;
+        visibility: visible;
+    }
+    li:nth-child(2){
+        width: 0px;
+        height: 0px;
+    }
+    h1{
+        text-align: center;
+    }
+    legend{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        padding-left: 85px;
+        font-size: 20px;
+    }
+    #monthSelected{
+        font-size: 20px;
+        padding-left: 111px;
+        margin-top: 15px;
+    }
+    .h6-il{
+        font-size: 19px;
+    }
+    .style_title-nav_hora{
+        margin-top: 52px;
+        margin-left: 5px;
+        width: 313px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+@media screen and (width: 533px) and (height: 320px) {
+    .m-t-10{
+        width: 89px;
+        margin-left: 17px;
+    }
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 7px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 51px;
+        left: 473px;
+        top: -155px;
+        text-transform: lowercase;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 44px;
+        left: -23px;
+        top: 49px;
+        visibility: visible;
+    }
+    .nav>li{
+        max-width: 0px;
+        max-height: 0px;
+    }
+    .Hora_de_actualizacion{
+        width: fit-content;
+        margin-left: 56px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .style_title-nav{
+        margin-left: 199px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        text-align: center;
+        font-size: 22px;
+        padding-left: 70px;
+    }
+    b:nth-child(1){
+        margin-left: 133px;
+    }
+    #monthSelected{
+        padding-left: 219px;
+        font-size: 20px;
+        margin-top: 12px;
+    }
+    .style_title-nav_hora{
+        margin-left: 119px;
+    }
+}
+@media screen and (width: 768px) and (height: 1024px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 10px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        top: -46px;
+        width: 11px;
+        left: -33px;
+        visibility: hidden;
+    }
+    .container .m-b-30{
+        width: fit-content;
+    }
+    .m-t-10{
+        width: 89px;
+    }
+    .glyphicon-log-in{
+        font-size: 45px;
+        left: -17px;
+        top: 49px;
+        visibility: visible;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 152px;
+    }
+    .nav.navbar-nav.menu_nav_header2{
+        margin-top: 46px;
+        margin-left: -335px;
+    }
+    legend{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    #monthSelected{
+        margin-top: 12px;
+        font-size: 26px;
+        padding-left: 321px;
+        height: 46px;
+    }
+    #calendarGraphic1{
+        font-size: 26px;
+        padding-left: 287px;
+        height: 46px;
+    }
+    .style_title-nav{
+        margin-top: 59px;
+        margin-left: -226px;
+    }
+    .style_title-nav_hora{
+        margin-left: 215px;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 46px;
+    }
+}
+@media screen and (width: 1024px) and (height: 768px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 17px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    a[href="http://localhost/onair/User/logout"]{
+        left: -8px;
+        width: 104px;
+        top: -4px;
+        visibility: hidden;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        font-size: 9px;
+        visibility: hidden;
+        left: 0px;
+        width: min-content;
+        top: -25px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 42px;
+        left: -5px;
+        top: 33px;
+        visibility: visible;
+    }
+    .nav.navbar-nav.menu_nav_header2{
+        margin-top: 46px;
+    }
+    .container-fluid.menu_nav_header{
+        height: 101px;
+    }
+    .style_title-nav{
+        margin-top: 53px;
+        margin-left: -227px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 297px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .m-t-10{
+        width: 80px;
+        top: 99px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 24px;
+        padding-left: 83px;
+        height: 46px;
+        margin-left: 333px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 26px;
+        padding-left: 99px;
+        height: 46px;
+        margin-left: 335px;
+    }
+    .style_title-nav_hora{
+        margin-left: 354px;
+    }
+}
+@media screen and (width: 320px) and (height: 480px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        font-size: 9px;
+        width: fit-content;
+        left: 251px;
+        top: -182px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 34px;
+        top: 33px;
+        visibility: visible;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .m-t-10{
+        margin-left: 16px;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    .style_title-nav_hora{
+        margin-top: 57px;
+        width: 297px;
+        margin-left: 12px;
+    }
+    .style_title-nav{
+        margin-left: 86px;
+    }
+    legend{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 93px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 109px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+@media screen and (width: 480px) and (height: 320px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 8px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        font-size: 8px;
+        width: 53px;
+        left: 424px;
+        top: -147px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 34px;
+        left: -13px;
+        top: 41px;
+        visibility: visible;
+    }
+    .m-t-10{
+        margin-left: 16px;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 30px;
+    }
+    .style_title-nav{
+        margin-left: 163px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 174px;
+    }
+    legend{
+        text-align: center;
+    }
+    .style_title-nav_hora{
+        margin-left: 97px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 198px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+@media screen and (width: 411px) and (height: 731px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 9px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .m-t-10{
+        margin-left: 13px;
+        width: 71px;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 66px;
+        margin-left: -15px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 70px;
+        font-size: 8px;
+        left: 339px;
+        top: -188px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 37px;
+        top: 38px;
+        visibility: visible;
+    }
+    .style_title-nav{
+        margin-left: 127px;
+    }
+    h1{
+        text-align: center;
+    }
+    legend{
+        text-align: center;
+        margin-top: 14px;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 135px;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 161px;
+    }
+    .style_title-nav_hora{
+        margin-top: 64px;
+        margin-left: 58px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+@media screen and (width: 731px) and (height: 411px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 14px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 57px;
+        left: 671px;
+        top: -137px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 41px;
+        left: -23px;
+        top: 46px;
+        visibility: visible;
+    }
+    img.m-t-10{
+        margin-top: 30px;
+        width: 77px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 144px;
+    }
+    .style_title-nav{
+        margin-left: 287px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 295px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 317px;
+    }
+    .style_title-nav_hora{
+        margin-left: 219px;
+    }
+}
+@media screen and (width: 411px) and (height: 823px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 25px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: fit-content;
+        left: 346px;
+        top: -183px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 33px;
+        top: 38px;
+        left: -4px;
+        visibility: visible;
+    }
+    .h6-il{
+        font-size: 14px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 10px;
+    }
+    .style_title-nav{
+        margin-left: 129px
+    }
+    img.m-t-10{
+        margin-left: 14px;
+        margin-top: -15px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 138px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 163px;
+        margin-top: 6px;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    .style_title-nav_hora{
+        margin-left: 63px;
+        margin-top: 57px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+
+@media screen and (width: 414px) and (height: 736px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-top: 9px;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 65px;
+        left: 347px;
+        top: -194px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 37px;
+        top: 41px;
+        left: -7px;
+        visibility: visible;
+    }
+    .m-t-10{
+        width: 68px;
+        margin-left: 15px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 16px;
+    }
+    .style_title-nav{
+        margin-left: 137px;
+    }
+    h1{
+        text-align: center;
+    }
+    .style_title-nav_hora{
+        margin-top: 67px;
+        margin-left: 59px;
+    }
+    #calendarGraphic1{
+        font-size: 21px;
+        padding-left: 138px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 21px;
+        padding-left: 153px;
+    }
+    .container{
+        margin-top: 16px;
+        overflow: auto;
+    }
+}
+
+@media screen and (width: 375px) and (height: 812px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 305px;
+        width: 68px;
+        top: -188px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 33px;
+        top: 40px;
+        left: 3px;
+        visibility: visible;
+    }
+    .telmexVIP_header .logo_header{
+        margin-top: 4px;
+    }
+    .m-t-10{
+        width: 73px;
+        margin-left: 9px;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 65px;
+    }
+    .h6-il{
+        font-size: 15px;
+    }
+    .style_title-nav_hora{
+        margin-left: 51px;
+        margin-top: 60px;
+    }
+    .style_title-nav{
+        margin-left: 117px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 125px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 150px;
+    }
+    .container{
+        margin-top: 16px;
+        overflow: auto;
+    }
+}
+
+@media screen and (width: 812px) and (height: 375px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        top: -41px;
+        left: -1px;
+        width: 63px;
+        visibility: hidden;
+    }
+    .style_title-nav{
+        margin-top: 70px;
+        margin-left: -234px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 169px;
+        margin-top: 24px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 33px;
+        top: 38px;
+        left: -2px;
+        visibility: visible;
+    }
+    .m-t-10{
+        width: 73px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 319px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 334px;
+    }
+    .style_title-nav_hora{
+        margin-left: 250px;
+    }
+    .container{
+        margin-top: 16px;
+    }
+}
+@media screen and (width: 1024px) and (height: 1366px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        top: -36px;
+        width: 74px;
+        left: 0px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: -webkit-xxx-large;
+        top: 44px;
+        left: -8px;
+        visibility: visible;
+    }
+    .style_title-nav{
+        margin-top: 64px;
+        margin-left: -230px;
+    }
+    .style_title-nav_hora{
+        margin-left: 352px;
+        margin-top: 20px;
+    }
+    img.m-t-10{
+        width: 89px;
+        margin-top: 22px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 47px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    h1{
+        text-align: center;
+    }
+    legend{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 25px;
+        padding-left: 75px;
+        margin-left: 339px;
+        height: 46px;
+    }
+    #monthSelected{
+        font-size: 25px;
+        height: 46px;
+        padding-left: 106px;
+        margin-left: 344px;
+    }
+    .container{
+        margin-top: 16px;
+    }
+}
+@media screen and (width: 1366px) and (height: 1024px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        top: -35px;
+        left: 0px;
+        width: 66px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: -webkit-xxx-large;
+        left: -16px;
+        top: 41px;
+        visibility: visible;
+    }
+    img.m-t-10{
+        width: 89px;
+        margin-top: 22px;
+    }
+    .style_title-nav{
+        margin-top: 68px;
+        margin-left: -237px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .Hora_de_actualizacion{
+        margin-left: 427px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 22px;
+        padding-left: 112px;
+        margin-left: 396px;
+        height: 39px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 22px;
+        height: 39px;
+        padding-left: 117px;
+        margin-left: 402px;
+    }
+    .style_title-nav_hora{
+        margin-left: 523px;
+    }
+    .container{
+        margin-top: 23px;
+    }
+}
+@media screen and (width: 240px) and (height: 320px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 66px;
+        left: 175px;
+        top: -196px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .style_title-nav{
+        margin-left: 43px;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 52px;
+        margin-left: -44px;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 38px;
+        font-size: 34px;
+        left: -3px;
+        visibility: visible;
+    }
+    img.m-t-10{
+        margin-left: 14px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 55px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 55px;
+    }
+}
+@media screen and (width: 320px) and (height: 240px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: 64px;
+        left: 254px;
+        top: -178px;
+        visibility: hidden;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .Hora_de_actualizacion{
+        margin-top: 46px;
+        width: 329px;
+        margin-left: -38px;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 41px;
+        font-size: 34px;
+        left: -3px;
+        visibility: visible;
+    }
+    img.m-t-10{
+        margin-left: 15px;
+    }
+    .style_title-nav{
+        margin-left: 88px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        font-size: 18px;
+        padding-left: 90px;
+    }
+    legend{
+        text-align: center;
+    }
+    #monthSelected{
+        font-size: 18px;
+        padding-left: 90px;
+    }
+}
+@media screen and (width: 1024px) and (height: 600px){
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 37px;
+        left: -4px;
+        top: 47px;
+        visibility: visible;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        font-size: 12px;
+        left: 0px;
+        top: -54px;
+        width: min-content;
+        visibility: hidden;
+    }
+    .navbar-nav>li{
+        height: 89px;
+    }
+    .style_title-nav{
+        margin-top: 50px;
+        margin-left: -243px;
+    }
+    .style_title-nav_hora{
+        margin-left: 350px;
+    }
+    h1{
+        text-align: center;
+    }
+    .h6-il{
+        font-size: 17px;
+    }
+    #calendarGraphic1{
+        font-size: 17px;
+        margin-left: 325px;
+        padding-left: 82px;
+    }
+    b{
+        margin-left: 328px;
+    }
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    #monthSelected{
+        font-size: 17px;
+        padding-left: 106px;
+        margin-left: 319px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    #calendarGraphic1{
+        width: 30%;
+    }
+    #monthSelected{
+        width: 30%;
+    }
+}
+@media screen and (width: 732px) and (height: 412px) {
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .m-t-10{
+        margin-left: 15px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .h6-il{
+        font-size: 15px;
+        margin-left: 152px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 663px;
+        top: -144px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 30px;
+        top: 38px;
+        visibility: visible;
+    }
+    .style_title-nav{
+        margin-left: 275px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        text-align: center;
+        font-size: 19px;
+        margin-left: 7px;
+    }
+    b:nth-child(1){
+        text-align: center;
+        margin-left: 211px;
+    }
+    #monthSelected{
+        font-size: 19px;
+        padding-left: 324px;
+    }
+}
+@media screen and (width: 480px) and (height: 854px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        left: 15px;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: 414px;
+        top: -151px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 42px;
+        left: -6px;
+        font-size: 36px;
+        visibility: visible;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    .style_title-nav_hora{
+        margin-left: 103px;
+    }
+    .style_title-nav{
+        margin-left: 171px;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        padding-left: 171px;
+        font-size: 21px;
+    }
+    b:nth-child(1){
+        margin-left: 102px;
+    }
+    #monthSelected{
+        font-size: 21px;
+        padding-left: 195px;
+    }
+    .container{
+        overflow: auto;
+    }
+}
+@media screen and (width: 854px) and (height:480px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        width: min-content;
+        left: -12px;
+        top: -43px;
+        visibility: hidden;
+    }
+    .style_title-nav{
+        margin-top: 58px;
+        margin-left: -222px;
+    }
+    .style_title-nav_hora{
+        margin-left: 272px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    .glyphicon.glyphicon-log-in{
+        font-size: 34px;
+        top: 37px;
+        visibility: visible;
+    }
+    h1{
+        text-align: center;
+    }
+    #calendarGraphic1{
+        margin-left: 15px;
+        font-size: 16px;
+        padding-left: 301px;
+    }
+    b:nth-child(1){
+        margin-left: 238px;
+    }
+    #monthSelected{
+        margin-left: 15px;
+        font-size: 16px;
+        padding-left: 325px;
+    }
+}
+@media screen and (width: 823px) and (height: 411px){
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a{
+        left: -1px;
+        top: -45px;
+        width: min-content;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 39px;
+        font-size: 32px;
+        visibility: visible;
+    }
+    .style_title-nav{
+        margin-top: 58px;
+        margin-left: -230px;
+    }
+    .style_title-nav_hora{
+        margin-left: 250px;
+    }
+    .h6-il{
+        font-size: 16px;
+    }
+    h1{
+        text-align: center;
+    }
+    b{
+        margin-left: 224px;
+    }
+    legend{
+        margin-top: 18px;
+    }
+    #calendarGraphic1{
+        font-size: 17px;
+        margin-left: 15px;
+        padding-left: 284px;
+    }
+    #monthSelected{
+        margin-left: 15px;
+        font-size: 17px;
+        padding-left: 302px;
+    }
+}
+@media screen and (width: 736px) and (height: 414px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+        margin-left: 15px;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+    b:nth-child(2){
+        display: none;
+    }
+    .nav>li{
+        width: 0px;
+        height: 0px;
+    }
+    .telmexVIP_header .navbar-inverse .navbar-nav>li>a {
+        left: 671px;
+        top: -146px;
+        visibility: hidden;
+    }
+    .glyphicon.glyphicon-log-in{
+        top: 35px;
+        font-size: 29px;
+        visibility: visible;
+    }
+    h1{
+        text-align: center;
+    }
+    b{
+        margin-left: 217px;
+    }
+    .style_title-nav_hora{
+        margin-left: 220px;
+    }
+    #calendarGraphic1{
+        padding-left: 306px;
+    }
+    .container{
+        margin-top: 16px;
+    }
+    #monthSelected{
+        padding-left: 328px;
+    }
+    .h6-il{
+        font-size: 18px;
+    }
+    .style_title-nav{
+        margin-left: 284px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .telmexVIP_header .logo_header{
+        position: absolute;
+    }
+    .glyphicon.glyphicon-user{
+        display: none;
+    }
+}
+
+.loadingInfo{
+    border-bottom-left-radius: 5px;
+    position: fixed;
+    background: #0000009e;
+    width: 24%;
+    right: 0px;
+    top: 0px;
+    color: white;
+    text-align: center;
+    z-index: 30;
+    padding-bottom: 2em;
+    animation: .7s aparecer ease;
+    border: 1px solid black;
+    border-right: unset;
+    border-top: unset;
+}
+
+.loadingInfo i {
+    font-size: 6em;
+}
+
+
+.loadingInfo span{
+    display: block;
+    margin-bottom: 1.5em;
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: 1em;
+    word-break: break-word;
+}
+
+@keyframes aparecer {
+    from{right: -35em;}
+    50%{right: 3em;}
+    to{right: 0px;}
+}
+
+
+@keyframes ocultar {
+    10%{top: 4em;}
+    50%{opacity: 0.3;}
+    to{top: -20em;}
+}
+
+
+#ReportesMain{
+    position: fixed;
+    z-index: 15;
+    top: 17.2em;
+    left: 14.3em;
+    border: 1px solid #084c6f;
+    border-left: unset;
+    display: none;
+}
+
+#ReportesMain a, #reportesExport a{border-bottom:unset !important;transition: .3s !important;}
+
+
+.datesRange{
+    text-align: center;
+    background: #e8e8e8;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: inset 0 0 20px 2px #b1b1b1;
+    margin-top: 2em;
+}

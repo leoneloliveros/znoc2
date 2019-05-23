@@ -1,0 +1,86 @@
+body {
+	background-color: #fff;
+	color: #333;
+	font-family: "Roboto","Arial";
+	font-weight: 400;
+	margin: 0;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+.fas{
+	color: blue;
+}
+.table{
+	margin-top: 15px;
+	border: 2px solid black;
+}
+.trs{
+	background-color: #40739e;
+}
+.trs:hover{
+	background-color: #333;
+	color:#9A6559;
+}
+.container h1{
+	border: 3px solid #333;
+	border-radius: 8px;
+	padding: 3px;
+	text-shadow: 0px 0px 1px #218c74;
+	font-size: 24px;
+	text-align: center;
+}
+.search-inp{
+	width: 20%;
+}
+.modal{
+	color: #333;
+}
+.modal-body{
+	height: 416px;
+}
+.modal-header{
+	background-color: #084c6f;
+	box-shadow: 1px 1px 16px rgba(10, 10, 10, 0.91);
+}
+.modal-foot{
+	float: right;
+	text-align: right;
+}
+.mt{
+	margin-top: 15px;
+}
+.search{
+	display: inline;
+}
+.search input{
+	float: right;
+	width: 30%;
+}
+.search button{
+	width: 30%;
+}
+.Number{
+	display: none;
+}
+h1.display-4{
+	border: 0px;
+	border-radius: 0px;
+	margin-top: 5px;
+	color: #f5f5f5;
+}
+.custom-select{
+	height: 25px;
+	border-radius: 5px;
+}
+.btn-warning{
+	margin-top: -86px;
+	margin-right: 199px;
+	width: 195px;
+}
+

@@ -1,0 +1,39 @@
+body {
+    background: url('../img/wallpaperNewUser.jpg') repeat fixed center;
+    color: #fff;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=submit] {
+    margin-left: 192px;
+    margin-top: 18px;
+}
+.lower{
+    text-transform: lowercase;
+}
+
+.fas{
+    color: #5131E5;
+}
+.box{
+    display: inline;
+    margin-top: 0px;
+
+}
+.box select{
+    color: #333;
+    float: right;
+    width: 50%;
+    height: 33px;
+    border-radius: 6px;
+}
+h1{
+    text-align: center;
+    margin-top: -31px;
+}

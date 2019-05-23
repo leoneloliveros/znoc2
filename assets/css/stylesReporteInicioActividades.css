@@ -1,0 +1,124 @@
+#headIng{
+    padding: 0px 8em;
+    
+}
+
+.diasMeses{
+    padding: 7px 3em !important;
+}
+.mesanio,#headIng,.diasMeses{
+    border-right: 1px solid;
+}
+
+.nameIng,#headIng,.noData,.thData,.mesanio,.diasMeses{
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+.nameIng{
+    border: unset !important;
+}
+
+.noData,.thData{
+    text-align:center;
+    border-left: 1px solid #dddddd;
+    transition: .5s;
+    padding: 5px !important;
+    border-top: unset !important;
+}
+
+.noData{
+    color: #b55353;padding: 4px;
+}
+
+.noData:hover{
+    background: #b55353;
+    color: white;
+    transition: .5s;
+}
+.thData:hover{
+    background: #54d254;
+    transition: .5s;
+    color: white;
+    font-weight: bold;
+}
+
+#showfhIng{
+    background: #084c6f;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    color: white;
+    right: 0px;
+    animation: 1s aparecer ease;
+    width: 28%;
+    border: 3px solid #2f85b1;
+    border-top: unset;
+    border-right: unset;
+}
+
+#showfhIng i{
+    font-size: 2em;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    transition: .5s;
+    color: white;
+    top: 0px;
+    background: #084c6f;
+    padding: 3px;
+    min-height: 36px;
+}
+
+#showfhIng i:hover{
+    color: #084c6f;
+    background: white;
+    border-left: 1px solid;
+    padding: 3px 9px;
+}
+
+#showfhIng i:active{
+    background: red;
+}
+
+#showfhIng label{
+    background: white;
+    color: #084c6f;
+    padding: 8px 0px;
+    width: 93%;
+    text-align: center;
+    margin: unset;
+}
+
+
+#showfhIng span{
+    width: 50%;
+    padding: 3px 12px;
+    display: inline-block;
+}
+
+#showfhIng p{
+    border-top: 1px solid #084c6f;
+    padding: 3px;
+    background: white;
+    color: #084c6f;
+    font-weight: bold;
+    margin: unset;
+    text-align: center;
+}
+#showfhIng >div{
+    width: 100%;
+    padding: unset;
+}
+
+td.selectedx{
+    background: #084c6f !important;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+span.hiden{
+    color: transparent;
+    position: absolute;
+}
