@@ -4,7 +4,7 @@
 <div class="footerF">
     <p class="margenDelFooter">©1998-2018 ZTE Corporation - ZTE Colombia. All rights reserved</p>
 </div>
-
+|
 <script>
     var click = true;
     var clickreportes = true
@@ -58,7 +58,9 @@
 <script src="<?= base_url("assets/js/utils/app1.global.js?v=1.2") ?>" type="text/javascript"></script>
 <script src="<?= base_url("assets/js/utils/app.dom.js") ?>" type="text/javascript"></script>
 
-
+<?php if($this->uri->segment(2) == 'ccihfc') :?>
+    <script src="<?=base_url("assets/js/bitacoras.js")?>"></script>
+<?php endif ?>
 <!-- COLVIs PARA MOSTRAR U OCULTAR COLUMNAS -->
 <!-- <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.colVis.min.js"></script> -->
 
@@ -67,6 +69,12 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
     <script type="text/javascript" src="<?= base_url('assets/js/ConfigTableUsers.js'); ?>"></script>
+    <?php endif ?>
+    
+<?php if ($this->uri->segment(2) === "frontEndBookLogs"):?>
+    <script type="text/javascript" src="<?= base_url('assets/js/frontEndBookLog.js'); ?>"></script>
+    
 <?php endif ?>
+
 </body>
 </html>
