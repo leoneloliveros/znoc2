@@ -25,16 +25,8 @@
     <!-- tooltip -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/tooltip.css?v=' . validarEnProduccion()); ?>">
     <!--    para poder utilizar server side dtatables-->
+    
       <script src="<?= base_url("assets/plugins/jquery/jquery.min.js") ?>"></script>
-      <script src="<?= base_url('assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js') ?>"></script>
-      <script src="<?= base_url('assets/plugins/datatables/js/dataTables.bootstrap.js?v=1.0') ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/dataTables.buttons.min.js") ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/jszip.min.js") ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/pdfmake.min.js") ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/vfs_fonts.js") ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/buttons.html5.min.js") ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/buttons.print.min.js") ?>"></script>
-      <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/dataTables.select.min.js") ?>"></script><script src="<?= base_url("assets/plugins/jquery/jquery.min.js") ?>"></script>
       <script src="<?= base_url('assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js') ?>"></script>
       <script src="<?= base_url('assets/plugins/datatables/js/dataTables.bootstrap.js?v=1.0') ?>"></script>
       <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/dataTables.buttons.min.js") ?>"></script>
@@ -46,6 +38,9 @@
       <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/dataTables.select.min.js") ?>"></script>
       <script type="text/javascript"src="https://cdn.datatables.net/scroller/2.0.0/js/dataTables.scroller.min.js"></script>
       <script src="http://momentjs.com/downloads/moment.min.js"></script>
+      
+
+      
     <!--    para poder utilizar server side dtatables-->
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="<?= base_url('assets/plugins/bootstrap/css/bootstrap.min.css') ?>" />
