@@ -1,5 +1,4 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-
   /**
   * CIgniter DataTables
   * CodeIgniter library for Datatables server-side processing / AJAX, easy to use :3
@@ -13,21 +12,15 @@
   */
 class DatatablesBuilder
 {
-    private $initComplete = 'function(){}';
-    private $script = "";
-    private $query = "";
     private $CI;
-    private $total = 0;
     private $searchable 	= array();
     private $style 			= '';
-	   private $connection 	= 'local';
-
+	private $connection 	= 'local';
 	private $dt_options		= array(
 		'searchDelay' 	=> '500',
-        'autoWidth' 	=> 'true'
+		'autoWidth' 	=> 'false'
 	);
 	private $ax_options 	= '';
-
     /**
      * Load the necessary library from codeigniter and caching the query
      * We use Codeigniter Active Record to generate query
@@ -35,20 +28,16 @@ class DatatablesBuilder
     public function __construct()
     {
         $this->CI =& get_instance();
-
         $this->_db = $this->CI->load->database($this->connection, TRUE);
         $this->CI->load->helper('url');
         $this->CI->load->library('table');
-
         $this->_db->start_cache();
     }
-
     public function __destruct()
     {
         $this->_db->stop_cache();
         $this->_db->flush_cache();
     }
-
     /**
      * Select column want to fetch from database
      *
@@ -58,35 +47,22 @@ class DatatablesBuilder
     public function select($columns)
     {
         $this->_db->select($columns);
-
         $this->searchable = $columns;
         return $this;
-    }
-
-    public function query($query,$columns)
-    {
-      // $this->total = $this->_db->query($query)->num_rows();
-      $this->query = $query;
-      $this->searchable = $columns;
-      return $this;
     }
     public function from($table)
     {
         $this->_db->from($table);
-
         $this->table = $table;
         return $this->_db;
     }
-
     public function style($data)
     {
         foreach ($data as $option => $value) {
             $this->style .= "$option=\"$value\"";
         }
-
         return $this;
     }
-
     /**
      * Set heading for the table
      *
@@ -99,26 +75,23 @@ class DatatablesBuilder
     {
         $this->table_heading[] 		= $label;
         $this->columns[] 			= array($label, $source, $function);
-
         return $this;
     }
-
     /**
      * Initialize Datatables
      */
     public function init($dt_name)
     {
-        if (isset($_REQUEST['dt_name'])) {
-            if ($_REQUEST['dt_name'] == $dt_name) {
-                if(isset($_REQUEST['draw']) && isset($_REQUEST['length']) && isset($_REQUEST['start']))
-                {
-                    $this->json();
-                    exit;
-                }
-            }
+		if (isset($_REQUEST['dt_name'])) {
+			if ($_REQUEST['dt_name'] == $dt_name) {
+				if(isset($_REQUEST['draw']) && isset($_REQUEST['length']) && isset($_REQUEST['start']))
+				{
+					$this->json();
+					exit;
+				}
+			}
         }
     }
-
     /**
      * Set searchable columns from table
      *
@@ -130,21 +103,6 @@ class DatatablesBuilder
         $this->searchable = $data;
         return $this;
     }
-
-    public function script($data)
-    {
-        $this->script = $data;
-        return $this;
-    }
-
-    public function initComplete($data)
-    {
-        $this->initComplete = $data;
-        return $this;
-    }
-
-
-
     /**
      *	Add options to datatables jquery
      *
@@ -164,10 +122,8 @@ class DatatablesBuilder
 				$this->dt_options[$option] = $value;
 			}
 		}
-
         return $this;
 	}
-
 	/**
      * Generate the datatables table (lol)
      *
@@ -179,10 +135,8 @@ class DatatablesBuilder
             'table_open' => "<table id=\"$id\" $this->style>"
         ));
         $this->CI->table->set_heading($this->table_heading);
-
         echo $this->CI->table->generate();
     }
-
     /**
      * Jquery for datatables
      *
@@ -192,52 +146,90 @@ class DatatablesBuilder
     {
 		$dt_options	= '';
 		$ax_options = $this->ax_options;
-
 		foreach ($this->dt_options as $opt => $value) {
 			$dt_options .= "$opt: $value, \n";
 		}
-
-        $initComplete = $this->initComplete;
-
 		$output = "
-            <script type=\"text/javascript\" defer=\"defer\">
-                function createDatatable() {
-                    $('#{$id} thead').append('<tr id=\"searchZone\"></tr>');
-                    $('#{$id} thead th').clone().appendTo( '#searchZone' );
-                    var count = 0;
-                    $('#searchZone th').each( function () {
-                        $(this).html( '<input type=\"text\" class=\"input_search\" id=\"'+count+'\" placeholder=\"Buscar..\" />' );
-                        count++;
-                    } );
-                    erTable_{$id} = $(\"#{$id}\").DataTable({
-                        serverSide: true,
-                        {$dt_options}
-                        ajax: {
-                            url: \"". site_url(uri_string()) ."\",
-                            type: \"POST\",
-                            data: function (d, dt) {
-                                d.dt_name = \"{$id}\"
-                                {$ax_options}
-                            }
+        <script type=\"text/javascript\" defer=\"defer\">
+        
+            function createDatatable() {
+                
+                var oldExportAction = function (self, e, dt, button, config) {
+                    if (button[0].className.indexOf('buttons-excel') >= 0) {
+                        if ($.fn.dataTable.ext.buttons.excelHtml5.available(dt, config)) {
+                            $.fn.dataTable.ext.buttons.excelHtml5.action.call(self, e, dt, button, config);
                         }
-                    });
-                    $( '.input_search' ).on( 'keypress', function (e) {
-                        console.log(e.keyCode);
-                        if (e.keyCode == 13) {
-                            var id = this.id;
-                            erTable_{$id}
-                            .column(id).search(this.value)
-                            .draw();
+                        else {
+                            $.fn.dataTable.ext.buttons.excelFlash.action.call(self, e, dt, button, config);
                         }
-                    } );
+                    } else if (button[0].className.indexOf('buttons-print') >= 0) {
+                        $.fn.dataTable.ext.buttons.print.action(e, dt, button, config);
+                    }
                 };
-
-                createDatatable();
-            </script>";
-        $script = $this->script;
-        echo $script.$output;
+                
+                var newExportAction = function (e, dt, button, config) {
+                    var self = this;
+                    var oldStart = dt.settings()[0]._iDisplayStart;
+                
+                    dt.one('preXhr', function (e, s, data) {
+                        // Just this once, load all data from the server...
+                        data.start = 0;
+                        data.length = 2147483647;
+                
+                        dt.one('preDraw', function (e, settings) {
+                            // Call the original action function 
+                            oldExportAction(self, e, dt, button, config);
+                
+                            dt.one('preXhr', function (e, s, data) {
+                                // DataTables thinks the first item displayed is index 0, but we're not drawing that.
+                                // Set the property to what it was before exporting.
+                                settings._iDisplayStart = oldStart;
+                                data.start = oldStart;
+                            });
+                
+                            // Reload the grid with the original page. Otherwise, API functions like table.cell(this) don't work properly.
+                            setTimeout(dt.ajax.reload, 0);
+                
+                            // Prevent rendering of the full data to the DOM
+                            return false;
+                        });
+                    });
+                
+                    // Requery the server with the new one-time export settings
+                    dt.ajax.reload();
+                };
+                
+				erTable_{$id} = $(\"#{$id}\").DataTable({
+                    processing: true,
+                    serverSide: true,
+                    dom: 'Blfrtip',
+                    buttons: [
+                        {   
+                            
+                            extend: 'excelHtml5',
+                            text: 'Excel <span class=\"fa fa-file-excel-o\"></span>',
+                            className: 'btn-cami_cool',
+                            action: newExportAction
+                        },
+                    ],
+                    {$dt_options}
+                    ajax: {
+                        url: \"". site_url(uri_string()) ."\",
+						type: \"POST\",
+                        data: function (d, dt) {
+							d.dt_name = \"{$id}\"
+							{$ax_options}
+						}
+                    }
+                    
+                });
+                
+            };
+           
+            createDatatable();
+        </script>";
+        echo $output;
     }
-
     /**
      * Generate JSON for datatables
      *
@@ -250,79 +242,40 @@ class DatatablesBuilder
         $start		= $_REQUEST['start'];
         $order_by	= $_REQUEST['order'][0]['column'];
         $order_dir	= $_REQUEST['order'][0]['dir'];
-        $search		= $_REQUEST['search']['value'];
+        $search		= $_REQUEST['search']["value"];
         $output['data'] 	= array();
-
         if($this->searchable == '*') {
             $field = $this->_db->list_fields($this->table);
-            $this->searchable = implode("*", $field);
+            $this->searchable = implode(',', $field);
 		}
-
-        $column = explode("*", $this->searchable);
+        $column = explode(',', $this->searchable);
 		$this->searchable = array();
-
         foreach($column as $key => $col) {
             $col = strtolower($col);
             $col = strstr($col, ' as ', true) ?: $col;
             $this->searchable[] = $col;
 		}
-
-    $delimitador = "";
-    for($i=0; $i< count($this->searchable);$i++){
-        if ($_REQUEST['columns'][$i]['search']['value'] != "") {
-            $query = $this->query;
-             $this->query = substr($query, 0, -1);
-            if($delimitador==""){
-                $delimitador = "WHERE";
-            }
-            else{
-                $delimitador = "AND";
-            }
-
-            $this->query .= " ".$delimitador." ".$this->searchable[$i]." LIKE '%".$_REQUEST['columns'][$i]['search']['value']."%' ";
-        }
-    }
-    if($search != "") {
-        $query = $this->query;
-        $this->query = substr($query, 0, -1);
-        for($i=0; $i< count($this->searchable);$i++){
-            if($delimitador==""){
-                $delimitador = "WHERE";
-            }
-            else{
-                $delimitador = "AND";
-            }
-            if($i==0) $this->query .= " ".$delimitador." ".$this->searchable[$i]." LIKE '%$search%' ";
-            else $this->query .= " OR ".$this->searchable[$i]." LIKE '%$search%' ";
-        }
-    }
-
+		if($search != "") {
+			for($i=0; $i< count($this->searchable);$i++){
+				if($i==0) $this->_db->like($this->searchable[$i], $search);
+				else $this->_db->or_like($this->searchable[$i], $search);
+			}
+		}
         /** ---------------------------------------------------------------------- */
         /** Count records in database */
         /** ---------------------------------------------------------------------- */
-        // $query = $this->query;
-        //
-        // $total  = $this->_db->query($query)->result_array();
-
-        // $total  = 25800;
-        // //
-        // // $total = $this->_db->count_all_results();
-        //
-        // $output['query_count'] 	= $this->_db->last_query();
-        // $output['recordsTotal'] = $output['recordsFiltered'] = $total;
-
+        $total = $this->_db->count_all_results();
+        $output['query_count'] 	= $this->_db->last_query();
+        $output['recordsTotal'] = $output['recordsFiltered'] = $total;
         /** ---------------------------------------------------------------------- */
         /** Generate JSON */
 		/** ---------------------------------------------------------------------- */
-
 		if ($length != -1) {
-            $query = $this->query;
-            $this->query = substr($query, 0, -1);
-            $this->query .= " LIMIT $start, $length ;";
+			$this->_db->limit($length, $start);
 		}
-        $query = $this->query;
+        $this->_db->order_by($this->columns[$order_by][1], $order_dir);
+        $result 			= $this->_db->get()->result_array();
         $output['query'] 	=  $this->_db->last_query();
-        $result  = $this->_db->query($query)->result_array();
         foreach ($result as $row) {
             $arr = array();
             foreach ($this->columns as $key => $column) {
@@ -334,8 +287,6 @@ class DatatablesBuilder
             }
             $output['data'][] = $arr;
         }
-
         echo json_encode($output);
     }
-
 }
