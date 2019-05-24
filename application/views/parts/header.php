@@ -24,9 +24,11 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/util.css?v=' . validarEnProduccion()); ?>">
     <!-- tooltip -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/tooltip.css?v=' . validarEnProduccion()); ?>">
+
     <!--    para poder utilizar server side dtatables-->
     
       <script src="<?= base_url("assets/plugins/jquery/jquery.min.js") ?>"></script>
+
       <script src="<?= base_url('assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js') ?>"></script>
       <script src="<?= base_url('assets/plugins/datatables/js/dataTables.bootstrap.js?v=1.0') ?>"></script>
       <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/dataTables.buttons.min.js") ?>"></script>
@@ -44,7 +46,11 @@
     <!--    para poder utilizar server side dtatables-->
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="<?= base_url('assets/plugins/bootstrap/css/bootstrap.min.css') ?>" />
-    <link rel="stylesheet" href="<?= base_url('assets/plugins/font-awesome/css/font-awesome.min.css') ?>" />
+
+    <!-- NUEVO FAVICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="<?= base_url('assets/plugins/font-awesome/css/font-awesome.min.css') ?>" /> -->
 
     <!-- STYLES DATATABLES CAMILO -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/datatables_camilo.css?v=' . validarEnProduccion()); ?>">
@@ -62,7 +68,9 @@
     <?php if ($this->uri->segment(1) == 'User' && $this->uri->segment(2) == 'principal' && $this->uri->segment(3) == 'ingeniero') : ?>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/ingeniero.css'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/bootstrap/css/bootstrap.min.css'); ?>">
+
     <link rel="stylesheet" type="text/css" href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
     <script src="<?= base_url("assets/plugins/sweetalert2/sweetalert2.all.js") ?>"></script>
     <?php endif ?>
     <!-- Estilos para modulo "Editar puntos" -->
@@ -85,7 +93,11 @@
       <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/accessFormu.css?v=' . validarEnProduccion()); ?>">
     <?php endif ?>
 
-
+    
+    <?php if ($this->uri->segment(1) == 'Bitacoras') : ?>
+        <script src="<?= base_url("assets/plugins/jquery/jquery.min.js") ?>"></script>
+        <link rel="stylesheet" href="<?= base_url("assets/css/bitacoras.css")?>">
+    <?php endif ?>
     <?php if ($this->uri->segment(1) == 'Consultas_simples' && $this->uri->segment(2) == 'prueba') : ?>
       <script src="<?= base_url("assets/plugins/jquery/jquery.min.js") ?>"></script>
       <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/plugins/datetimepicker-master/build/jquery.datetimepicker.min.css'); ?>">
@@ -162,7 +174,7 @@
             <a href="<?= base_url('Malla/crear_malla') ?>" class='w3-bar-item w3-button'><i class="fa fa-edit"></i> Malla</a>
             <a href="<?= base_url('OneCloud/show_data') ?>" class='w3-bar-item w3-button'><i class="fa fa-envelope"></i> Almacenamiento de evidencias</a>
         <?php } ?>
-        <a id="a_mdl_conf_user" class="w3-bar-item w3-button "><i class="fa fa-gear"></i> Configuración</span></a>
+        <a id="a_mdl_conf_user" class="w3-bar-item w3-button "><i class="fas fa-cogs"></i> Configuración</span></a>
     </div>
 
     <div id="reportesExport">
@@ -184,18 +196,28 @@
             <div class="container-fluid menu_nav_header">
                 <div class="navbar-header">
                     <!-- Page Content -->
-                    <span class="">
                         <span id="btn_menu_lateral" class="logo_header" onclick="w3_open()"><img class="m-t-10" src="<?= base_url('assets/img/LogoZTENav.png'); ?>" style="cursor:pointer;"> </span>
-                    </span>
                 </div>
 
 
-                <ul class="nav navbar-nav menu_nav_header">
-                    <h2 style="color: #fff;" id="hora_actualizacion" class="style_title-nav_hora"></h2>
-                </ul>
-
-                <ul class="nav navbar-nav menu_nav_header">
-                    <!-- <h2 class="style_title-nav"><?php echo $title ?></h2> -->
+                <ul class="nav navbar-nav">
+                    <!-- <h2 style="color: #fff;" id="hora_actualizacion" class="style_title-nav_hora"></h2> -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Crear Bitácoras<span class="caret"></span></a>
+                        <ul class="dropdown-menu logBooks">
+                            <li>
+    
+                                <a href="<?= base_url('Bitacoras/ccihfc') ?>">
+                                <h4 class="style_title-nav">CCI Y HFC</h4>
+                            </a>
+                            </li>
+                            <li>
+                                    <a href="<?= base_url('Bitacoras/frontEndBookLogs') ?>">
+                                    <h4 class="style_title-nav">FrontEnd</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
