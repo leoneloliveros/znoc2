@@ -47,6 +47,7 @@
       <script type="text/javascript" src="<?= base_url("assets/plugins/datatables/js/dataTables.select.min.js") ?>"></script>
       <script type="text/javascript"src="https://cdn.datatables.net/scroller/2.0.0/js/dataTables.scroller.min.js"></script>
       <script src="http://momentjs.com/downloads/moment.min.js"></script>
+      <?php endif ?>
     <!--    para poder utilizar server side dtatables-->
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="<?= base_url('assets/plugins/bootstrap/css/bootstrap.min.css') ?>" />

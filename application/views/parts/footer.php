@@ -4,7 +4,6 @@
 <div class="footerF">
     <p class="margenDelFooter">©1998-2018 ZTE Corporation - ZTE Colombia. All rights reserved</p>
 </div>
-|
 <script>
     var click = true;
     var clickreportes = true

@@ -49,6 +49,11 @@
          
       }
    
+      public function getEngineersByTypeLogBooks(){
+         $tipo = $this->input->post('type');
+         $engs = $this->Dao_bitacoras_model->getEngineersForLogBooks($tipo);
+         echo json_encode($engs);
+      }
    }
    
    /* End of file Bitacoras.php */
