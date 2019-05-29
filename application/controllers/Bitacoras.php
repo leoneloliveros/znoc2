@@ -27,7 +27,7 @@
       
       public function frontEndBookLogs()
       {
-         $data['title'] = 'Bitacoras FrontEnd';
+         $data['title'] = 'Bitacoras Front Office';
          $this->load->view('parts/header', $data);
          $this->load->view('BitFrontEnd');
          $this->load->view('parts/footer');

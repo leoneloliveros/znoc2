@@ -65,14 +65,13 @@ class User extends CI_Controller {
                 ->column('Estado Incidente', 'ESTADO_INCIDENTE')
                 ->column('Grupo Propietario', 'GRUPO_PROPIETARIO')
                 ->column('Responasble', 'RESPONSABLE')
-                ->column('Subestado', 'FECHA_CREACION')
-                ->column('Tec', 'MES_TKT')
-                ->column('Banda', 'DIA_TKT')
-                ->column('Ente Ejecutor', 'TIEMPO_VIDA_TKT')
-                ->column('WBTS', 'TIEMPO_ESCALAMIENTO')
-                ->column('Fecha Creación Onair', 'TIEMPO_OPERA')
-                ->column('Fecha Ultima Revisión', 'FECHA_REPORTE')
-                ->column('Fecha Ultima Revisión', 'FECHA_REPORTE');
+                ->column('Fecha Creación', 'FECHA_CREACION')
+                ->column('Mes', 'MES_TKT')
+                ->column('Dia', 'DIA_TKT')
+                ->column('Tiempo Vida', 'TIEMPO_VIDA_TKT')
+                ->column('Tiempo Escalamiento', 'TIEMPO_ESCALAMIENTO')
+                ->column('Tiempo operación', 'TIEMPO_OPERA')
+                ->column('Fecha Reporte', 'FECHA_REPORTE');
 
         // *****************************************
 
@@ -91,14 +90,13 @@ class User extends CI_Controller {
                 ->column('Estado Incidente', 'ESTADO_INCIDENTE')
                 ->column('Grupo Propietario', 'GRUPO_PROPIETARIO')
                 ->column('Responasble', 'RESPONSABLE')
-                ->column('Subestado', 'FECHA_CREACION')
-                ->column('Tec', 'MES_TKT')
-                ->column('Banda', 'DIA_TKT')
-                ->column('Ente Ejecutor', 'TIEMPO_VIDA_TKT')
-                ->column('WBTS', 'TIEMPO_ESCALAMIENTO')
-                ->column('Fecha Creación Onair', 'TIEMPO_OPERA')
-                ->column('Fecha Ultima Revisión', 'FECHA_REPORTE')
-                ->column('Fecha Ultima Revisión', 'FECHA_REPORTE');
+                ->column('Fecha Creación', 'FECHA_CREACION')
+                ->column('Mes', 'MES_TKT')
+                ->column('Dia', 'DIA_TKT')
+                ->column('Tiempo Vida', 'TIEMPO_VIDA_TKT')
+                ->column('Tiempo Escalamiento', 'TIEMPO_ESCALAMIENTO')
+                ->column('Tiempo operación', 'TIEMPO_OPERA')
+                ->column('Fecha reporte', 'FECHA_REPORTE');
 
         // *****************************************
 
