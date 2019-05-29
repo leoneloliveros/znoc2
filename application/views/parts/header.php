@@ -213,7 +213,7 @@
                             </li>
                             <li>
                                     <a href="<?= base_url('Bitacoras/frontEndBookLogs') ?>">
-                                    <h4 class="style_title-nav">FrontEnd</h4>
+                                    <h4 class="style_title-nav">FrontOffice</h4>
                                 </a>
                             </li>
                         </ul>
