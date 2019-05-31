@@ -4,7 +4,6 @@
 <div class="footerF">
     <p class="margenDelFooter">©1998-2018 ZTE Corporation - ZTE Colombia. All rights reserved</p>
 </div>
-|
 <script>
     var click = true;
     var clickreportes = true
@@ -88,3 +87,4 @@
       <script type="text/javascript"src="https://cdn.datatables.net/scroller/2.0.0/js/dataTables.scroller.min.js"></script>
 </body>
 </html>
+ 

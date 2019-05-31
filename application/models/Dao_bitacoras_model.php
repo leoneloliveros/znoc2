@@ -13,20 +13,47 @@ class Dao_bitacoras_model extends CI_Model {
 
   public function saveBookLogsAccordingType($dataGen,$specificData,$table)
   {
+    // echo '<pre>'; print_r($dataGen); echo '</pre>';
     $this->db->insert('logbooks',$dataGen);
-    
-    $gen = $this->db->affected_rows();
-
     // echo '<pre>'; print_r($this->db->last_query()); echo '</pre>';
     
-    $specificData['id_logbooks'] = $this->db->insert_id();
     
-    $this->db->insert($table,$specificData);
+    if ($this->db->affected_rows() == 1)  {
+      
+      $specificData['id_logbooks'] = $this->db->insert_id();
+      
+      $this->db->insert($table,$specificData);
+      // echo '<pre>'; print_r($this->db->last_query()); echo '</pre>';
+      
+      if ($this->db->affected_rows() == 1)  {
+
+        // return 'xxxx';
+        return true;
+      }else{
+        return "no guarda en la tabla $table";
+      }
+    }else{
+      return "no guarda en la tabla logBooks";
+    }
     // echo '<pre>'; print_r($this->db->last_query()); echo '</pre>';
+    // echo '<pre>'; print_r("============"); echo '</pre>';
+    
 
-    $spe = $this->db->affected_rows();
+  }
 
-    return $gen + $spe;
+  public function getEngineersForLogBooks($tipo)
+  {
+    $query = $this->db->select('CONCAT(u.nombres," ",u.apellidos) AS ing, u.id_users AS id')
+      ->from('users u')
+      ->join('permission p','u.id_users = p.id_user','INNER')
+      ->where('p.id_role',$tipo)
+      ->get();
+      // echo '<pre>'; print_r($query->result()); echo '</pre>';
+      $ingenieros = array();
+      foreach ($query->result() as $row)
+          $ingenieros[$row->id]=$row->ing;
+    return $ingenieros;
+    
   }
 
 }
