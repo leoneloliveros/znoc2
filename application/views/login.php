@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta charset="UTF-8">
-        <title>ZOLID ON DILO LOGIN</title>
+        <title>ZOLID ZNOC LOGIN</title>
         <!--   ICONO PAGINA    -->
         <link rel="icon" href="<?= base_url('assets/images/title_icon.png'); ?>">
         <link rel="stylesheet" href="<?= base_url('assets/plugins/sweetalert-master/dist/sweetalert.css'); ?>" />
